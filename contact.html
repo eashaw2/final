@@ -1,13 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
 		<meta charset="utf-8">
 		<meta name="author" content="Ethan Shaw">
-		<meta name="description" content="Drop us a line, and we'll get back to you soon!">
+		<meta name="description" content="Drop us a line, and we'll get back to you 
+		  soon!">
 		<title>Wok Asian Cuisine - Contact</title>
-		<link href="styles.css" rel="stylesheet">
+		<link rel="stylesheet" href="styles.css">
 		<link rel="icon" type="image/x-icon" href="favicon.ico">
-</head>
+  </head>
+  
   <body>
     <h1><a href="index.html">Wok Asian Cuisine</a></h1>
     <nav>
@@ -15,23 +17,26 @@
         <li><a href="index.html">Home</a></li>
         <li><a href="#">Our Menu</a></li>
         <li><a href="#">Order Now</a></li>
-        <li><a href="##">Contact Us</a></li>
+        <li><a href="#" class="active">Contact Us</a></li>
       </ul>
     </nav>
+    
     <main>
       <h2>Contact Us</h2>
-      <p>
-        Do you have dietary concerns? Questions about an upcoming event? Drop 
-        us a line, and we'll get back to you soon!
-      </p>
+      <p>Do you have dietary concerns? Questions about an upcoming event? Drop 
+        us a line, and we'll get back to you soon!</p>
       <img src="images/contact.jpg" alt="A line of bowls on a table">
+
       <form action="https://wp.zybooks.com/form-viewer.php" method="POST">
         <label for="name">Name* <span class="required">Required</span></label>
         <input type="text" id="name" name="name" required>
-        <label for="adress">Address</label>
+
+        <label for="address">Address</label>
         <input type="text" id="address" name="address">
+
         <label for="city">City</label>
         <input type="text" id="city" name="city">
+
         <label for="state">State</label>
         <select id="state" name="state">
         	<option value="AL">Alabama</option>
@@ -86,22 +91,31 @@
         	<option value="WI">Wisconsin</option>
         	<option value="WY">Wyoming</option>
         </select>
+
         <label for="zip">Zip</label>
         <input type="number" id="zip" name="zip">
+
         <label for="phone">Phone* <span class="required">Required</span></label>
         <input type="tel" id="phone" name="phone" required>
+
         <label for="email">Email* <span class="required">Required</span></label>
         <input type="email" id="email" name="email" required>
-        <label for="method">Preferred Method of Contact?</label>
-        <input class="pref" type="radio" id="email-pref" name="method" value="email">
-        <label class="pref" for="email-pref">Email</label><br>
-        <input class="pref" type="radio" id="phone-pref" name="method" value="phone">
-        <label class="pref" for="phone-pref">Phone</label>
+
+        <fieldset>
+          <legend>Preferred Method of Contact?</legend>
+          <input type="radio" id="email-pref" name="method" value="email">
+          <label for="email-pref">Email</label><br>
+          <input type="radio" id="phone-pref" name="method" value="phone">
+          <label for="phone-pref">Phone</label>
+        </fieldset>
+        
         <label for="comments">Comments</label>
         <textarea id="comments" name="comments"></textarea>
+
         <input type="submit">
       </form>
     </main>
+
     <footer>
       Wok Asian Cuisine<br>
       Copyright &copy; 2022 Wok - All Rights Reserved.<br>
