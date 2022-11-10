@@ -1,0 +1,96 @@
+html {
+  font-family: Verdana, Arial, sans-serif;
+}
+
+body {
+  width: 1280px;
+  margin: 0 auto;
+  padding: 1em;
+  text-align: center;
+  background-color: #fdeecc;
+}
+
+h1 {
+  font-family: serif;
+}
+
+h1 a {
+  text-decoration: none;
+  color: black;
+}
+
+main img {
+  width: 100%;
+}
+
+nav {
+  padding-bottom: 1em;
+}
+
+nav li {
+  display: inline;
+}
+
+nav a {
+  padding: 0 1em;
+  color: blue;
+  text-decoration: none;
+}
+
+nav a:hover, a[href="##"] {
+  color: purple;
+}
+
+.header, footer {
+  background-color: #dbccaa;
+  padding: 1em;
+}
+
+.header h2 {
+  margin: 0.5em;
+}
+
+p {
+  max-width: 500px;
+  margin: 1em auto;
+  text-align: left;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 1em;
+}
+
+form {
+  text-align: left;
+  margin: 0 auto;
+  max-width: 500px;
+}
+
+label, input {
+  display: block;
+}
+
+label {
+  margin-top: 1em;
+}
+
+textarea, input[type="text"], input[type="tel"], input[type="email"],
+input[type="number"] {
+  min-width: 100%;
+  max-width: 100%;
+}
+
+.pref {
+  display: inline;
+}
+
+input[type="submit"] {
+  margin: 1em auto;
+}
+
+.required {
+  font-weight: bold;
+  font-style: italic;
+}
